@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+<script>
+    var arr = [];
+    var arrLength = prompt("Nhập chiều dài của mảng: ");
+    var i = 0;
+    var index = 0;
+    while (i < arrLength) {
+        var add = prompt("Nhập giá trị vào mảng");
+        arr.push(add);
+        i++;
+    }
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i] == "-") {
+            index = i;
+            arr[index] = "_";
+        }
+    }
+    console.log(arr);
+</script>
+</body>
+</html>
